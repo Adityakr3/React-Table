@@ -1,0 +1,35 @@
+.pagination-circle{
+    height: 3px;
+    width: 3px;
+    padding: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-active-page{
+    background-color: rgb(0, 132, 255);
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.453);
+}
+.pagination-circle:hover{
+    background-color: rgb(0, 132, 255);
+    cursor: pointer;
+    color: white;
+}
+.pagination-container{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly   ;
+    width: 10vw;
+    gap: 3px;
+}
+.prevBtn , .nextBtn{
+    padding: 8px 16px;
+    border: none;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.453);
+}

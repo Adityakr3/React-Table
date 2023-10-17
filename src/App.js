@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react'
+import {Table} from './Components/Table/Table'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// async function apiData(){
+//   const response = await fetch('https://dummyjson.com/products/category/smartphones')
+//   const data = await response.json();
+//   console.log(data);
+// }
+// apiData()
 
-export default App;
+// function apidata(){
+//   fetch('https://dummyjson.com/products/category/smartphones')
+//   .then((res)=>res.json())
+//   .then((data)=> console.log(data))
+//   .catch((err)=> console.log(err))
+// }
+// apidata()
+
+
+const App = () => {
+  return (
+<>
+  {/* <Text/> */}
+   <Table />
+</>
+)}
+
+export default App
+
+
+

@@ -1,0 +1,118 @@
+.carousel-box{
+    margin-top: 10%;
+    position: relative;
+    width: fit-content;
+    height: max-content;
+    margin: auto;
+    background-color: #fff;
+}
+.carousel-container{
+    margin-top: 10%;
+    position: relative;
+    width: fit-content;
+    height: max-content;
+}
+.image-container{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    z-index: 100;
+}
+.carousel-image{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.carousel-arrow{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    border-radius: 50%;
+   display: flex;   
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 0 0 2px grey;
+   top: 50%;
+   color: white;
+   cursor: pointer;
+}
+.carousel-arrow:hover{
+    background-color: #fff;
+    color: black;
+}
+.carousel-left-arrow{
+   left: 0%;
+   transform: translate(calc(-50% + 30px),-50%);
+}
+.carousel-right-arrow{
+    left: 100%;
+    transform: translate(calc(-50% - 30px),-50%);
+}
+.carousel-cross-btn{
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid red;
+    background-color: #fff;
+    left:100%;
+    background-color: white;
+}
+.carousel-cross-btn:hover{
+    color: white;
+    background-color: red;
+}
+.carousel-save-btn{
+    color: green;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0px;
+    border: 2px solid green;
+    background-color: #fff;
+}
+.carousel-save-btn:hover{
+    background: green;
+    color: white;
+}
+.carousel-circle-container{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%,-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.carousel-circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.carousel-circle:hover{
+    border-radius: 10%;
+    height: 10px;
+}
+.carousel-circle-active{
+    border-radius: 10%;
+    height: 10px;
+}
+.btns{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+}
